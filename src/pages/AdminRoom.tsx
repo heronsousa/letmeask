@@ -41,7 +41,7 @@ export function AdminRoom() {
             isAnswered: false
         }
 
-        await database.ref(`rooms/${roomId}/question`).push(question);
+        await database.ref(`rooms/${roomId}/questions`).push(question);
 
         setNewQuestion('');
     }
